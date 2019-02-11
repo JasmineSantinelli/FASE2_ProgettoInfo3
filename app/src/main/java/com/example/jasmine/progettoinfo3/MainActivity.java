@@ -109,10 +109,10 @@ public class MainActivity extends AppCompatActivity implements AsyncResponse {
                 latitude=location.getLatitude(); // N
             }
             text.setText("lon E: " + Double.toString(longitude) + " ||  lat N: " + Double.toString(latitude));
-            Toast.makeText(this, "Posizione aggiornata", Toast.LENGTH_SHORT).show();
+
         } catch (SecurityException e){
 
-            text.setText("errore (per non dire bestemmie)");
+            text.setText("errore ");
         }
     }
 
